@@ -1,12 +1,12 @@
 import java.util.*;
-	public class ArrayWithFunction
+	class ArrayWithFunction
 	{
-		int selement;
-		int flag=-1;
-		int counter=0;
-		Scanner scan = new Scanner(System.in);
-		int elements[]=new int[10];
-		static void enterElement(){
+		static int selement;
+		static int flag=-1;
+		static int counter=0;
+		static Scanner scan = new Scanner(System.in);
+		static int elements[]=new int[10];
+		static void enterelement(){
 			System.out.println("Enter 10 elements in the array");
 			for (counter=0;counter<10;counter++)
 		{
@@ -39,11 +39,10 @@ import java.util.*;
 			else
 				System.out.println(flag);
 		}
-		
-		}
 	public static void main(String[] args) {
 		enterelement();
         displayelement();
         searchelement();
         findelement();
 	}
+}

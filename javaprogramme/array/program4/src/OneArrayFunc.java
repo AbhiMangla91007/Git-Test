@@ -1,14 +1,16 @@
 import java.util.Scanner;
-class OneDArray  {
-    public static void main(String[ ] args) {
-        int arr[]=new int [5];
-        int tempInput;  //t
-        int i;          //couter for  
-        int j;          //counter for checking duplicate entry 
-        int k;          //counter for printing
-        int noOfVariables = 0;
-        boolean flag = false;  
-        Scanner input = new Scanner(System.in); 
+public class OneArrayFunc {
+    static int arr[]=new int [5];
+    static int tempInput;  
+    static int i;            
+    static int j;           
+    static int k;          
+    static int noOfVariables = 0;  
+    static boolean flag = false;   
+    static Scanner input = new Scanner(System.in); 
+
+    static void getInputAndCheck(){
+        //input from user and check
         System.out.println("Enter 5 unique values between 10 & 100 : ");
         for(i=0; i<5; i++)
         {  
@@ -39,10 +41,20 @@ class OneDArray  {
                 i--;
             }   
         }
+    }
+
+    static void printElements(){
+        //Print all elements
         System.out.print("The five unique values are ");
         for(i=0;i<5;i++)
         {
             System.out.print(arr[i] + " ");
-        }       
+        }     
+    }
+
+    
+    public static void main(String[ ] args) {
+        getInputAndCheck();
+        printElements();   
     }
 }
