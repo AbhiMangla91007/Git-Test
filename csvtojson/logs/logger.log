@@ -1,0 +1,8 @@
+2019-02-08 13:40:34 ERROR NameValidator:51 - 
+ 
+com.ncu.exceptions.MissingExtensionException: Missing Dot"Oops.. Extension Is Messing.!"
+
+2019-02-08 13:44:14 ERROR NameValidator:71 - 
+ 
+com.ncu.exceptions.FileNotAvailable: File is not available"Oops.. Given File Is File Is Not Available Into Our Directory ...!"
+
